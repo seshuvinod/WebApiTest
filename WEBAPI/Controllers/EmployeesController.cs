@@ -23,12 +23,12 @@ namespace WEBAPI.Controllers
         public HttpResponseMessage Get(string gender="All")
         {
 
-         string userName=Thread.CurrentPrincipal.Identity.Name;
+         //string userName=Thread.CurrentPrincipal.Identity.Name;
 
             try
             {
              
-                switch (userName.ToLower())
+                switch (gender.ToLower())
                 {
                     case "all":
                         return Request.CreateResponse(HttpStatusCode.OK, context.Employees.Select(x => x).ToList());
@@ -39,7 +39,7 @@ namespace WEBAPI.Controllers
                     case "unknown":
                         return Request.CreateResponse(HttpStatusCode.OK, context.Employees.Where(x => x.Gender == "Unknown"));
                     default:
-                        return Request.CreateResponse(HttpStatusCode.BadRequest, "could not find gender with name " + userName);
+                        return Request.CreateResponse(HttpStatusCode.BadRequest, "could not find gender with name " + gender);
                 }
             }
             catch (Exception ex)
