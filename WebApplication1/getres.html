@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+        <input type='button' id='btn' value='GetEmps' />
+        <ul id='myDiv'></ul>
+        <script type='text/javascript'>
+        $(function ()
+ {
+
+            $('#btn').click(function () {
+                var res = $('#myDiv');
+                $.ajax({
+                    type:'GET',
+                    url: 'http://localhost:49797/api/employees',
+                    dataType:'jsonp',
+                    success: function(data)
+                    {
+                        res.empty();
+                        $.each(data, function(index, val) {
+                            res.append("Name is "+val.name+ " and Gender is" +val.gender+ "<br\>");
+                        });
+                    },
+                    error: function () {
+                        res.html('Error');
+                    }
+
+                });
+
+            })
+
+        })
+
+        </script>
+   
+</body>
+</html>

@@ -1,0 +1,10 @@
+c:\TestProjects\WEBAPI\DbContext\bin\Debug\DbContext.dll.config
+c:\TestProjects\WEBAPI\DbContext\bin\Debug\DbContext.dll
+c:\TestProjects\WEBAPI\DbContext\bin\Debug\DbContext.pdb
+c:\TestProjects\WEBAPI\DbContext\bin\Debug\EntityFramework.dll
+c:\TestProjects\WEBAPI\DbContext\bin\Debug\EntityFramework.SqlServer.dll
+c:\TestProjects\WEBAPI\DbContext\bin\Debug\EntityFramework.xml
+c:\TestProjects\WEBAPI\DbContext\bin\Debug\EntityFramework.SqlServer.xml
+c:\TestProjects\WEBAPI\DbContext\obj\Debug\DbContext.dll
+c:\TestProjects\WEBAPI\DbContext\obj\Debug\DbContext.pdb
+c:\TestProjects\WEBAPI\DbContext\obj\Debug\DbContext.csprojResolveAssemblyReference.cache

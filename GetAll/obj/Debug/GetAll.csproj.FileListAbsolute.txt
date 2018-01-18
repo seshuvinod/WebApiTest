@@ -1,0 +1,4 @@
+c:\TestProjects\WEBAPI\GetAll\bin\Debug\GetAll.dll
+c:\TestProjects\WEBAPI\GetAll\bin\Debug\GetAll.pdb
+c:\TestProjects\WEBAPI\GetAll\obj\Debug\GetAll.dll
+c:\TestProjects\WEBAPI\GetAll\obj\Debug\GetAll.pdb

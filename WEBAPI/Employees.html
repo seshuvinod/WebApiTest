@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset='utf-8' />
+    <script src='Scripts/jquery-1.10.2.js'></script>
+
+</head>
+<body>
+        <b>Please enter the Name </b><input type="text" style="width: 100px;border: 1px solid #3D484C;background:white;margin: 0 0 5px;padding: 8px;border-radius: 5px;font-size: 12px;padding-right: 30px;color:black; " id="txtusername" />
+    <br />
+    <b>Please enter the Password </b><input type="password" style="width: 100px;border: 1px solid #3D484C;background:white;margin: 0 0 5px;padding: 8px;border-radius: 5px;font-size: 12px;padding-right: 30px;color:black; " id="txtpassword" />
+    <br />
+    <input type='button' id='btn' value='GetEmps' style="border: 1px solid #3D484C;margin: 0 0 5px; border-radius: 5px;background-color:aliceblue;" />\
+    <input type='button' id='btn1' value='ClearResults' style="border: 1px solid #3D484C;margin: 0 0 5px; border-radius: 5px;background-color:aliceblue;" />
+    <br />
+        <ul style="background-color:bisque;display:inline-block;text-align:justify" id='myDiv'></ul>
+        <script type='text/javascript'>
+
+            $(function ()
+            {
+                
+                $('#btn').click(function () {
+                    var res = $('#myDiv');
+                    var gender = $('#txtusername').val();
+                    var password = $('#txtpassword').val();
+                    var options = {
+                        type: 'GET',
+                       url: 'https://localhost:44300/api/employees?gender=' + gender,
+                       // url:'https://localhost:44300/api/employees',
+                        dataType: 'json',
+                        headers: {
+                            'Authorization':'Basic' + btoa(gender + ':' + password)
+                        },
+                        success: function (data)
+                        {
+                            res.empty();
+                            $.each(data, function (index, val)
+                            {
+                                res.append("Name is " + val.name + " and Gender is" + val.gender + "<br\>");
+                            });
+                        },
+                        complete: function (ses)
+                        {
+                            if (ses.status = '401')
+                            {
+                                res.empty();
+                                res.append("Unauthorized");
+                            }
+                        },
+                        error: function () {
+                            res.html('Hi' + " " +gender + " "+"Please select either male or female");
+                        }
+
+                    };
+                    if (gender != "") {
+
+                        $.ajax(
+                            options
+
+                        );
+                    }
+                    else {
+                        res.html("No Data to Display")
+                    }
+                   
+                
+                })
+                $('#btn1').click(function () {
+                    var res = $('#myDiv');
+                    res.empty();
+                   
+                })
+            })
+            
+        </script>
+</body>
+</html>
