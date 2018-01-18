@@ -28,6 +28,7 @@ namespace WEBAPI
             
             config.Formatters.Remove(config.Formatters.XmlFormatter);
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            //Commented code 
             //var jsonpformattor = new JsonpMediaTypeFormatter(config.Formatters.JsonFormatter);
             // config.Formatters.Insert(0, jsonpformattor);
             //config.Formatters.Add(jsonpformattor);
