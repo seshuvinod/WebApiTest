@@ -11,7 +11,7 @@ using System.Web.Http.Filters;
 
 namespace WEBAPI
 {
-    public class AuthyenticateUser: AuthorizationFilterAttribute
+    public class AuthenticateUser: AuthorizationFilterAttribute
     {
         public override void OnAuthorization(HttpActionContext actionContext)
         {
@@ -23,7 +23,7 @@ namespace WEBAPI
             else
             {
                 //Create Authentication token if credentials are found
-                string authenticationToken = actionContext.Request.Headers.Authorization.Scheme;
+                string authenticationToken = actionContext.Request.Headers.Authorization.Parameter;
                 //decode the credential string
                 string decoded = Encoding.UTF8.GetString(Convert.FromBase64String(authenticationToken));
                 //Split the decoded string (usually the format will be username:password
