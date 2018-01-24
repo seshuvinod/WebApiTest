@@ -32,7 +32,7 @@ namespace WEBAPI
             //var jsonpformattor = new JsonpMediaTypeFormatter(config.Formatters.JsonFormatter);
             // config.Formatters.Insert(0, jsonpformattor);
             //config.Formatters.Add(jsonpformattor);
-            // config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+            config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
             //config.Filters.Add(new AuthenticateUser());
             config.EnableCors();
           config.Filters.Add(new RequireHttpsFromHttp());
