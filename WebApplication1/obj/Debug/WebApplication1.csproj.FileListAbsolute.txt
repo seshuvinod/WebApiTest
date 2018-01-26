@@ -30,3 +30,4 @@ c:\TestProjects\WEBAPI\WebApplication1\bin\Microsoft.ApplicationInsights.xml
 c:\TestProjects\WEBAPI\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 c:\TestProjects\WEBAPI\WebApplication1\obj\Debug\WebApplication1.dll
 c:\TestProjects\WEBAPI\WebApplication1\obj\Debug\WebApplication1.pdb
+c:\TestProjects\WEBAPI\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
