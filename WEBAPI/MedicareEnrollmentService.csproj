@@ -249,6 +249,7 @@
     <Compile Include="AuthenticateUser.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\EnrollmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -346,6 +347,14 @@
     <ProjectReference Include="..\GetAll\GetAll.csproj">
       <Project>{da35babd-ec74-4c36-b369-a027c158d013}</Project>
       <Name>GetAll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MedicareEnrollmentAccessLayer\MedicareEnrollmentAccessLayer.csproj">
+      <Project>{bc4372ec-5882-4b3e-99b2-6a3fcddd0ab2}</Project>
+      <Name>MedicareEnrollmentAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApplication1\WebApplication1.csproj">
+      <Project>{f03f38c5-44b2-46d3-90fc-5ec656b4865f}</Project>
+      <Name>WebApplication1</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

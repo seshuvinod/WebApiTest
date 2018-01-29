@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEBAPI", "WEBAPI\WEBAPI.csproj", "{FDF6C80D-6E76-4ABB-97C4-0DBD8C2B596D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicareEnrollmentService", "WEBAPI\MedicareEnrollmentService.csproj", "{FDF6C80D-6E76-4ABB-97C4-0DBD8C2B596D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetAll", "GetAll\GetAll.csproj", "{DA35BABD-EC74-4C36-B369-A027C158D013}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbContext", "DbContext\DbContext.csproj", "{5D0F04B2-2252-4906-BDFE-B607BE8F7699}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{F03F38C5-44B2-46D3-90FC-5EC656B4865F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicareEnrollmentAccessLayer", "MedicareEnrollmentAccessLayer\MedicareEnrollmentAccessLayer.csproj", "{BC4372EC-5882-4B3E-99B2-6A3FCDDD0AB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F03F38C5-44B2-46D3-90FC-5EC656B4865F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F03F38C5-44B2-46D3-90FC-5EC656B4865F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F03F38C5-44B2-46D3-90FC-5EC656B4865F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4372EC-5882-4B3E-99B2-6A3FCDDD0AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4372EC-5882-4B3E-99B2-6A3FCDDD0AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4372EC-5882-4B3E-99B2-6A3FCDDD0AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4372EC-5882-4B3E-99B2-6A3FCDDD0AB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
